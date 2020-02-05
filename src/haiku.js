@@ -31,3 +31,14 @@ Haiku.prototype.sepWords3 = function() {
   let phrase3 = this.line3.split(" ")
   return phrase3
 }
+Haiku.prototype.vowelCount = function() {
+  const vowels = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"]
+  let vowelArray = [];
+  let wordSplit = this.line1.split("")
+  for (var i=0; i<= wordSplit.length; i++) {
+    if(wordSplit.includes(vowels[i])) {
+      vowelArray.push(vowels[i]);
+    }
+  }
+  return vowelArray.length
+}
