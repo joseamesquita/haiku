@@ -13,6 +13,8 @@ export function Haiku(line1, line2, line3) {
       return true;
   }
 }
-  // Haiku.prototype.checkInput3 = function(){
-  //   if (this.line3 === "yo") {
-  //     return true;
+  Haiku.prototype.checkInput3 = function(){
+    if (this.line3 === "bojour") {
+      return true;
+  }
+}

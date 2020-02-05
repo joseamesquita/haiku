@@ -7,9 +7,14 @@ describe("Haiku",  () => {
     expect(haiku.checkInput1()).toEqual(true)
   });
   
-  test("this should confirm input in lines 1 and 2", () => {
+  test("this should confirm input in line 2", () => {
     var haiku = new Haiku("hello", "hola", 0);
     expect(haiku.checkInput2()).toEqual(true)
-  })
+  });
+
+  test("this should confirm input in line 3", () => {
+    var haiku = new Haiku("hello", "hola", "bojour");
+    expect(haiku.checkInput3()).toEqual(true)
+  });
 
 });
