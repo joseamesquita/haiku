@@ -31,14 +31,38 @@ Haiku.prototype.sepWords3 = function() {
   let phrase3 = this.line3.split(" ")
   return phrase3
 }
-Haiku.prototype.vowelCount = function() {
+Haiku.prototype.vowelCount1 = function() {
   const vowels = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"]
-  let vowelArray = [];
-  let wordSplit = this.line1.split("")
-  for (var i=0; i<= wordSplit.length; i++) {
-    if(wordSplit.includes(vowels[i])) {
-      vowelArray.push(vowels[i]);
+  let vowelArray1 = [];
+  let wordSplit1 = this.line1.split("")
+  for (var i=0; i<= wordSplit1.length; i++) {
+    if(wordSplit1.includes(vowels[i])) {
+      vowelArray1.push(vowels);
     }
   }
-  return vowelArray.length
+  return (vowelArray1.length);
 }
+// Haiku.prototype.vowelCount2 = function() {
+//   const vowels = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"]
+//   let vowelArray2 = [];
+//   let wordSplit2 = this.line2.split("")
+//   for (var i=0; i<= wordSplit2.length; i++) {
+//     if(wordSplit2.includes(vowels[i])) {
+//       vowelArray2.push(vowels[i]);
+//     }
+//   }
+//   console.log();
+//   return (vowelArray2.length);
+// }
+// Haiku.prototype.vowelCount3 = function() {
+//   const vowels = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"]
+//   let vowelArray3 = [];
+//   let wordSplit3 = this.line3.split("")
+//   for (var i=0; i<= wordSplit3.length; i++) {
+//     if(wordSplit3.includes(vowels[i])) {
+//       vowelArray3.push(vowels[i]);
+//     }
+//   }
+//   console.log(wordSplit3);
+//   return (vowelArray3.length);
+// }

@@ -31,6 +31,9 @@ describe("Haiku",  () => {
   })
 });
 test("this should count the number of vowels in line1", () => {
-  let haiku = new Haiku("words", "more words",  "even more words")
-  expect(haiku.vowelCount()).toEqual(1);
+  let haiku = new Haiku("cat", "eat", "even more words")
+  expect(haiku.vowelCount1()).toEqual(1);
+  expect(haiku.vowelCount2()).toEqual(2);
+  expect(haiku.vowelCount3()).toEqual(5);
+  
 });
