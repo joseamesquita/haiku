@@ -18,6 +18,11 @@ describe("Haiku",  () => {
   });
   test("this should take input from line 1 and place each word into an array", () => {
     let haiku = new Haiku("My name is joe schmoe", "things" , "stuff");
-    expect(haiku.sepWords()).toEqual(["My", "name", "is", "joe", "schmoe"])
+    expect(haiku.sepWords1()).toEqual(["My", "name", "is", "joe", "schmoe"])
   });
+
+  test("this should take input from line 2 and place each word into an array", () => {
+    let haiku = new Haiku("things", "Hello Epicodus", "stuff");
+    expect(haiku.sepWords2()).toEqual(["Hello", "Epicodus"])
+  })
 });

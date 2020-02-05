@@ -18,9 +18,12 @@ export function Haiku(line1, line2, line3) {
       return true;
   }
 }
-Haiku.prototype.sepWords = function() {
- let phrase = this.line1.split(" ")
-//  console.log(empty);
- return phrase
+Haiku.prototype.sepWords1 = function() {
+ let phrase1 = this.line1.split(" ")
+ return phrase1
 
+}
+Haiku.prototype.sepWords2 = function() {
+  let phrase2 = this.line2.split(" ")
+  return phrase2
 }
