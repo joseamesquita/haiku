@@ -27,3 +27,7 @@ Haiku.prototype.sepWords2 = function() {
   let phrase2 = this.line2.split(" ")
   return phrase2
 }
+Haiku.prototype.sepWords3 = function() {
+  let phrase3 = this.line3.split(" ")
+  return phrase3
+}
