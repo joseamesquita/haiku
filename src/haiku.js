@@ -32,10 +32,10 @@ export class Haiku {
     let phrase3 = this.line3.split(" ")
     return phrase3
   }
-  vowelCount1(arr) {
+  vowelCount1(word) {
     const vowels = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
     let vowelArray1 = [];
-    let wordSplit1 = this.line1.split("")
+    let wordSplit1 = word.split("")
     for (var i = 0; i < wordSplit1.length; i++) {
       if (vowels.includes(wordSplit1[i])) {
         vowelArray1.push(vowels[i]);
@@ -79,7 +79,11 @@ export class Haiku {
   let newWord = this.removeE();
   console.log(newWord);
   let finalWord = this.dipthong(newWord[0]);
-  return finalWord;
+  console.log(finalWord);
+  let syllables = this.vowelCount1(finalWord);
+  // return finalWord;
+  console.log(syllables)
+  return syllables;
   }
 };
 // Haiku.prototype.vowelCount2 = function() {

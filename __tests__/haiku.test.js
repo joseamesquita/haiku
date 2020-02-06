@@ -32,7 +32,7 @@ describe("Haiku",  () => {
 });
 test("this should count the number of vowels in line1", () => {
   let haiku = new Haiku("baby yoda", "eat", "even more words")
-  expect(haiku.vowelCount1()).toEqual(5);
+  expect(haiku.vowelCount1("baby yoda")).toEqual(5);
 
   
 });
@@ -48,7 +48,7 @@ test("this should find two consecutive vowels", () => {
   expect(haiku.dipthong("yellow")).toEqual("yllow");
 });
 
-test("this should find two consecutive vowels", () => {
-  let haiku = new Haiku("baabee", "moon", "bee")
-  expect(haiku.syllableCount("baabee")).toEqual("babe");
+test("this should count syllables of a word", () => {
+  let haiku = new Haiku("treese", "moon", "bee")
+  expect(haiku.syllableCount("treese")).toEqual(1);
 });
