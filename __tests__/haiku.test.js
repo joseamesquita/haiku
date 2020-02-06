@@ -36,3 +36,9 @@ test("this should count the number of vowels in line1", () => {
 
   
 });
+test("this should remove e if it is the last character in the word", () => {
+  let haiku = new Haiku("babe yoda", "eat", "even more words")
+  expect(haiku.removeE()).toEqual(["bab", "yoda"]);
+
+  
+});
