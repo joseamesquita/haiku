@@ -41,7 +41,6 @@ export class Haiku {
         vowelArray1.push(vowels[i]);
       }
     }
-    // console.log(vowelArray1);
     return (vowelArray1.length);
   }
   removeE() {
@@ -65,10 +64,9 @@ export class Haiku {
   dipthong(word) {
     let newWord = word.toLowerCase();
     const vowels = ["a", "e", "i", "o", "u", "y"];
-    let vowel2 = ["a", "e", "i", "o", "u", "y"];
     for (let i = 0; i < newWord.length; i++) {
       let firstVowel = vowels.includes(word[i]);
-      let secondVowel = vowel2.includes(word[i + 1])
+      let secondVowel = vowels.includes(word[i + 1])
       if (firstVowel && secondVowel) {
         let result = newWord.replace(word[i + 1], "");
         return result
@@ -77,36 +75,8 @@ export class Haiku {
   }
   syllableCount() {
   let newWord = this.removeE();
-  console.log(newWord);
   let finalWord = this.dipthong(newWord[0]);
-  console.log(finalWord);
   let syllables = this.vowelCount1(finalWord);
-  // return finalWord;
-  console.log(syllables)
   return syllables;
   }
 };
-// Haiku.prototype.vowelCount2 = function() {
-//   const vowels = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"]
-//   let vowelArray2 = [];
-//   let wordSplit2 = this.line2.split("")
-//   for (var i=0; i<= wordSplit2.length; i++) {
-//     if(wordSplit2.includes(vowels[i])) {
-//       vowelArray2.push(vowels[i]);
-//     }
-//   }
-//   console.log();
-//   return (vowelArray2.length);
-// }
-// Haiku.prototype.vowelCount3 = function() {
-//   const vowels = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"]
-//   let vowelArray3 = [];
-//   let wordSplit3 = this.line3.split("")
-//   for (var i=0; i<= wordSplit3.length; i++) {
-//     if(wordSplit3.includes(vowels[i])) {
-//       vowelArray3.push(vowels[i]);
-//     }
-//   }
-//   console.log(wordSplit3);
-//   return (vowelArray3.length);
-// }
