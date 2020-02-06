@@ -42,3 +42,8 @@ test("this should remove e if it is the last character in the word", () => {
 
   
 });
+
+test("this should find two consecutive vowels", () => {
+  let haiku = new Haiku("baum", "moon", "bee")
+  expect(haiku.dipthong("baum")).toEqual("bam");
+});
