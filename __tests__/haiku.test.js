@@ -44,6 +44,11 @@ test("this should remove e if it is the last character in the word", () => {
 });
 
 test("this should find two consecutive vowels", () => {
-  let haiku = new Haiku("baum", "moon", "bee")
-  expect(haiku.dipthong("baum")).toEqual("bam");
+  let haiku = new Haiku("yellow", "moon", "bee")
+  expect(haiku.dipthong("yellow")).toEqual("yllow");
+});
+
+test("this should find two consecutive vowels", () => {
+  let haiku = new Haiku("baabee", "moon", "bee")
+  expect(haiku.syllableCount("baabee")).toEqual("babe");
 });
