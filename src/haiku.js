@@ -36,10 +36,11 @@ Haiku.prototype.vowelCount1 = function() {
   let vowelArray1 = [];
   let wordSplit1 = this.line1.split("")
   for (var i=0; i<= wordSplit1.length; i++) {
-    if(wordSplit1.includes(vowels[i])) {
-      vowelArray1.push(vowels);
+    if(vowels.includes(wordSplit1[i])) {
+      vowelArray1.push(vowels[i]);
     }
   }
+  console.log(vowelArray1);
   return (vowelArray1.length);
 }
 // Haiku.prototype.vowelCount2 = function() {

@@ -25,15 +25,14 @@ describe("Haiku",  () => {
     let haiku = new Haiku("things", "Hello Epicodus", "stuff");
     expect(haiku.sepWords2()).toEqual(["Hello", "Epicodus"])
   });
-  test("this should take input from line 2 and place each word into an array", () => {
+  test("this should take input from line 3 and place each word into an array", () => {
     let haiku = new Haiku("things", "Hello Epicodus", "stuff and things");
     expect(haiku.sepWords3()).toEqual(["stuff", "and", "things"])
   })
 });
 test("this should count the number of vowels in line1", () => {
-  let haiku = new Haiku("cat", "eat", "even more words")
-  expect(haiku.vowelCount1()).toEqual(1);
-  expect(haiku.vowelCount2()).toEqual(2);
-  expect(haiku.vowelCount3()).toEqual(5);
+  let haiku = new Haiku("baby yoda", "eat", "even more words")
+  expect(haiku.vowelCount1()).toEqual(5);
+
   
 });
