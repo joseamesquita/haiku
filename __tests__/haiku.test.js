@@ -49,6 +49,10 @@ test("this should find two consecutive vowels", () => {
 });
 
 test("this should count syllables of a word", () => {
-  let haiku = new Haiku("treese", "moon", "bee")
-  expect(haiku.syllableCount("treese")).toEqual(1);
+  let haiku = new Haiku("threese baby yoda", "moon", "bee")
+  expect(haiku.syllableCount("threese baby yoda")).toEqual(5);
 });
+// test("this should check if the input is a haiku", () => {
+//   let haiku = new Haiku("treese baby yoda", "moon", "bee")
+//   expect(haiku.syllableCount("treese baby ")).toEqual(5);
+// });
